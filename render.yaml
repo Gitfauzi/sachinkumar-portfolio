@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: flask-portfolio
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn my_portfolio:app
-
