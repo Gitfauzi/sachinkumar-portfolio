@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Sachin Kumar Portfolio{%endblock%}
+
+
+{% block content %}
+
+<div class="intro-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+    
+      <!-- Left: Text Content -->
+      <div class="col-md-6 text-center text-md-start">
+        <h1>Hello, I'm <strong>Sachin Kumar</strong></h1>
+        <p class="lead">
+          A passionate Computer Science graduate with hands-on experience in Python, Flask, SQL, and data analysis.
+        </p>
+        <a href="/projects" class="btn btn-primary m-2">View Projects</a>
+        <a href="/contact" class="btn btn-outline-secondary m-2">Contact Me</a>
+        <a href="{{ url_for('static', filename='Sachin_Resume.pdf') }}" class="btn btn-success m-2" download>Download Resume</a>
+        <small class="text-muted d-block">Updated July 2025 • PDF, 1 page</small>
+
+      </div>
+
+      <!-- Right: Image -->
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <img src="{{ url_for('static', filename='images/SachinImage.png') }}" class="img-fluid intro-image" alt="Sachin Kumar">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">What I Do</h2>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <h5>Data Analysis</h5>
+      <p>Cleaning, visualizing, and extracting insights from datasets using Pandas, NumPy, and SQL.</p>
+    </div>
+    <div class="col-md-4">
+      <h5>Backend Development</h5>
+      <p>Building fast, reliable Flask apps with SQL integration, user forms, and templates.</p>
+    </div>
+    <div class="col-md-4">
+      <h5>Problem Solving</h5>
+      <p>With a good foundation in DSA, I believe I can solve problems with constant efforts.</p>
+    </div>
+
+    </div>
+  </div>
+
+
+<footer class="bg-dark text-light text-center py-3 mt-5">
+  <p class="mb-0">© 2025 Sachin Kumar • <a href="mailto:techfebr23gmail.com" class="text-light">techfebr23@gmail.com</a></p>
+  <a href="https://medium.com/@mxcode">Medium Account</a>
+  <a href="https://www.linkedin.com/in/sachinkumar-tech/">LinkedIn</a>
+</footer>
+
+
+{% endblock %}

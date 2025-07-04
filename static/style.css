@@ -1,0 +1,165 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("/static/images/bg-tech.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: #1b1b1b; /* fallback */
+  color: #e0e0e0;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65); /* dark overlay */
+  z-index: -1;
+}
+
+/* ===== Intro Section ===== */
+.intro-section {
+  background: none;
+  color: #ffffff;
+  padding: 80px 0;
+}
+
+.intro-section h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.intro-section .lead {
+  font-size: 1.1rem;
+  color: #cccccc;
+  max-width: 90%;
+  margin-bottom: 25px;
+}
+
+.intro-section .btn {
+  margin: 8px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: 0.2s ease-in-out;
+  color: #fff;
+}
+
+.intro-section .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.intro-section .btn-outline-secondary {
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
+.intro-section .btn:hover {
+  transform: translateY(-2px);
+}
+
+.intro-image {
+  max-width: 80%;
+  height: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/* ===== What I Do Section ===== */
+.container.my-5 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  position: relative;
+  text-align: center;
+}
+
+.container h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #00aaff;
+  margin: 10px auto 0;
+}
+
+.container h5 {
+  font-weight: 600;
+  color: #f1f1f1;
+}
+
+.container p {
+  color: #d1d1d1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ===== Cards (Projects) ===== */
+.card {
+  background-color: rgba(20, 20, 20, 0.85);
+  color: #e0e0e0;
+  border: 1px solid #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  margin: 20px;
+}
+
+.card-title {
+  color: #ffffff;
+}
+
+.card-link {
+  color: #66ccff;
+}
+
+.card-link:hover {
+  color: #00aaff;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #111111;
+  color: #dddddd;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #bbbbbb;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.bg-darkblue {
+  background-color: #0b1c33 !important;  /* Deep bluish shade */
+  border-bottom: 1px solid #0e3054;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #d1d1d1;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #66ccff;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}

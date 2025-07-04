@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class = "container my-4">
+    <h2>Contact Form</h2>
+<form method="post"> 
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" name = "email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="putmessage" class="form-label">Let's Talk</label>
+    <input type="message" name = "message" class="form-control" id="message">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+{%endblock%}
