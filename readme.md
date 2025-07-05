@@ -6,7 +6,7 @@ Tech Stack
 Frontend: HTML, CSS, Bootstrap 5
 Backend: Python (Flask)
 Database: SQLite (with SQLAlchemy)
-Deployment: Render.com
+Deployment: Pythonanywhere.com
 Version Control: Git + GitHub
 
 Features:
